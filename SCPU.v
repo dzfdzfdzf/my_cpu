@@ -13,10 +13,10 @@ module SCPU(
 
     input  [4:0] reg_sel,    // register selection (for debug use)
     output [31:0] reg_data  // selected register data (for debug use)
-//output [2:0] DMType
+    //output [2:0] DMType
 );
     wire        RegWrite;    // control signal to register write
-    wire [5:0]       EXTOp;       // control signal to signed extension
+    wire [5:0]  EXTOp;       // control signal to signed extension
     wire [4:0]  ALUOp;       // ALU opertion
     wire [2:0]  NPCOp;       // next PC operation
 
@@ -46,8 +46,8 @@ module SCPU(
 	wire [11:0] iimm,simm,bimm;
 	wire [19:0] uimm,jimm;
 	wire [31:0] immout;
-wire[31:0] aluout;
-assign Addr_out=aluout;
+    wire[31:0] aluout;
+    assign Addr_out=aluout;
 	assign B = (ALUSrc) ? immout : RD2;
 	assign Data_out = RD2;
 	
@@ -95,7 +95,7 @@ assign Addr_out=aluout;
 	alu U_alu(.A(RD1), .B(B), .ALUOp(ALUOp), .C(aluout), .Zero(Zero), .PC(PC_out));
 
 //please connnect the CPU by yourself
-always @*
+always @ (*)
 begin
 	case(WDSel)
 		`WDSel_FromALU: WD<=aluout;
@@ -103,6 +103,5 @@ begin
 		`WDSel_FromPC: WD<=PC_out+4;
 	endcase
 end
-
-
+assign B= (ALUSrc==0? RD2:immout);
 endmodule
