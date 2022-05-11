@@ -17,7 +17,7 @@ module sccomp_tb();
    initial begin
       $readmemh( "Test_8_Instr.dat" , U_SCCOMP.U_IM.ROM); // load instructions into instruction memory
 //    $monitor("PC = 0x%8X, instr = 0x%8X", U_SCCOMP.PC, U_SCCOMP.instr); // used for debug
-      foutput = $fopen("results.txt");
+      foutput = $fopen("results.txt");  
       clk = 1;
       rstn = 1;
       #5 ;

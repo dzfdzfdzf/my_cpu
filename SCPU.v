@@ -103,5 +103,4 @@ begin
 		`WDSel_FromPC: WD<=PC_out+4;
 	endcase
 end
-assign B= (ALUSrc==0? RD2:immout);
 endmodule
