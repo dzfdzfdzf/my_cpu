@@ -1,3 +1,4 @@
+# bne blt bge bltu bgeu
 .text
     ori x7, x0, 0x2
 	ori x8, x0, 0x2

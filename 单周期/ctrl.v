@@ -11,6 +11,7 @@ module ctrl(Op,
             ALUOp,
             NPCOp,
             ALUSrc,
+            DMType,
             GPRSel,
             WDSel);
     
@@ -25,7 +26,7 @@ module ctrl(Op,
     output [4:0] ALUOp;    // ALU opertion
     output [2:0] NPCOp;    // next pc operation
     output       ALUSrc;   // ALU source for A
-    //output [2:0] DMType;
+    output [2:0] DMType;
     output [1:0] GPRSel;   // general purpose register selection
     output [1:0] WDSel;    // (register) write data selection
     
@@ -45,8 +46,11 @@ module ctrl(Op,
 
     // i format
     wire itype_l = ~Op[6]&~Op[5]&~Op[4]&~Op[3]&~Op[2]&Op[1]&Op[0]; //0000011
-    wire i_lw    = itype_l&~Funct3[2]&Funct3[1]&~Funct3[0];// lw 010
-    
+    wire i_lw    = itype_l&~Funct3[2]& Funct3[1]&~Funct3[0];// lw 010
+    wire i_lb    = itype_l&~Funct3[2]&~Funct3[1]&~Funct3[0];// lb 000
+    wire i_lh    = itype_l&~Funct3[2]&~Funct3[1]& Funct3[0];// lh 001
+    wire i_lbu   = itype_l& Funct3[2]&~Funct3[1]&~Funct3[0];// lbu 100
+    wire i_lhu   = itype_l& Funct3[2]&~Funct3[1]& Funct3[0];// lhu 101
     // i format
     wire itype_r = ~Op[6]&~Op[5]&Op[4]&~Op[3]&~Op[2]&Op[1]&Op[0]; //0010011
     wire i_addi  = itype_r&~Funct3[2]&~Funct3[1]&~Funct3[0]; // addi 000
@@ -65,7 +69,9 @@ module ctrl(Op,
     // s format
     wire stype = ~Op[6]&Op[5]&~Op[4]&~Op[3]&~Op[2]&Op[1]&Op[0];//0100011
     wire i_sw  = stype& ~Funct3[2]& Funct3[1]&~Funct3[0]; // sw 010
-    
+    wire i_sb  = stype& ~Funct3[2]&~Funct3[1]&~Funct3[0]; // sb 000
+    wire i_sh  = stype& ~Funct3[2]&~Funct3[1]& Funct3[0]; // sh 001
+
     // sb format
     wire sbtype = Op[6]&Op[5]&~Op[4]&~Op[3]&~Op[2]&Op[1]&Op[0];//1100011
     wire i_beq  = sbtype& ~Funct3[2]& ~Funct3[1]&~Funct3[0]; // beq 000
@@ -80,9 +86,9 @@ module ctrl(Op,
     wire i_lui = ~Op[6]& Op[5]& Op[4]&~Op[3]& Op[2]& Op[1]& Op[0]; //lui 0110111
     wire i_auipc = ~Op[6]&~Op[5]& Op[4]&~Op[3]& Op[2]& Op[1]& Op[0]; //auipc 0010111  
     // generate control signals
-    assign RegWrite = rtype | itype_r | i_jalr | i_jal|i_lw|i_lui|i_auipc; // register write
+    assign RegWrite = rtype | itype_r | i_jalr | i_jal|itype_l|i_lui|i_auipc; // register write
     assign MemWrite = stype;                           // memory write
-    assign ALUSrc   = itype_r | stype | i_jal | i_jalr|i_lw|i_lui|i_auipc;   // ALU B is from instruction immediate
+    assign ALUSrc   = itype_r | stype | i_jal | i_jalr|itype_l|i_lui|i_auipc;   // ALU B is from instruction immediate
     
     // signed extension
     // EXT_CTRL_ITYPE_SHAMT 6'b100000
@@ -140,4 +146,12 @@ module ctrl(Op,
     assign ALUOp[3] = i_andi|i_and|i_ori|i_or|i_xor|i_xori|i_sll|i_slt|i_sltu|i_slti|i_sltiu|i_slli|i_bltu|i_bgeu;
     assign ALUOp[4] = i_sra|i_srl|i_srai|i_srli;
     
+    // dm_word 3'b000
+    // dm_halfword 3'b001
+    // dm_halfword_unsigned 3'b010
+    // dm_byte 3'b011
+    // dm_byte_unsigned 3'b100
+    assign DMType[2]=i_lbu;
+    assign DMType[1]=i_sb|i_lb|i_lhu;
+    assign DMType[0]=i_sb|i_sh|i_lb|i_lh;
 endmodule

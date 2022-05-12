@@ -9,7 +9,7 @@ module sccomp(clk, rstn, reg_sel, reg_data);
    wire [31:0]    PC;
    wire           MemWrite;
    wire [31:0]    dm_addr, dm_din, dm_dout;
-   
+   wire [2:0]     DMType;
    wire rst = ~rstn;
        
   // instantiation of single-cycle CPU   
@@ -23,14 +23,17 @@ module sccomp(clk, rstn, reg_sel, reg_data);
          .Addr_out(dm_addr),          // output: address from cpu to memory
          .Data_out(dm_din),        // output: data from cpu to memory
          .reg_sel(reg_sel),         // input:  register selection
-         .reg_data(reg_data)        // output: register data
+         .reg_data(reg_data),         // output: register data
+         .dmType(DMType)
          );
          
   // instantiation of data memory  
    dm    U_DM(
          .clk(clk),           // input:  cpu clock
          .DMWr(MemWrite),     // input:  ram write
-         .addr(dm_addr[8:2]), // input:  ram address
+//         .addr(dm_addr[8:2]), // input:  ram address
+         .addr(dm_addr[8:0]),
+         .DMType(DMType),
          .din(dm_din),        // input:  data to ram
          .dout(dm_dout)       // output: data from ram
          );

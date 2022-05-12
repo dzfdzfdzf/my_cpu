@@ -12,14 +12,14 @@ module SCPU(
     output [31:0] Data_out,// data to data memory
 
     input  [4:0] reg_sel,    // register selection (for debug use)
-    output [31:0] reg_data  // selected register data (for debug use)
-    //output [2:0] DMType
+    output [31:0] reg_data,  // selected register data (for debug use)
+    output [2:0] dmType
 );
     wire        RegWrite;    // control signal to register write
     wire [5:0]  EXTOp;       // control signal to signed extension
     wire [4:0]  ALUOp;       // ALU opertion
     wire [2:0]  NPCOp;       // next PC operation
-
+    wire [2:0]  DMType;
     wire [1:0]  WDSel;       // (register) write data selection
     wire [1:0]  GPRSel;      // general purpose register selection
    
@@ -50,7 +50,7 @@ module SCPU(
     assign Addr_out=aluout;
 	assign B = (ALUSrc) ? immout : RD2;
 	assign Data_out = RD2;
-	
+	assign dmType=DMType;
 	assign iimm_shamt=inst_in[24:20];
 	assign iimm=inst_in[31:20];
 	assign simm={inst_in[31:25],inst_in[11:7]};
@@ -72,7 +72,7 @@ module SCPU(
 		.Op(Op), .Funct7(Funct7), .Funct3(Funct3), .Zero(Zero), 
 		.RegWrite(RegWrite), .MemWrite(mem_w),
 		.EXTOp(EXTOp), .ALUOp(ALUOp), .NPCOp(NPCOp), 
-		.ALUSrc(ALUSrc), .GPRSel(GPRSel), .WDSel(WDSel)
+		.ALUSrc(ALUSrc), .DMType(DMType), .GPRSel(GPRSel), .WDSel(WDSel)
 	);
  // instantiation of pc unit
 	PC U_PC(.clk(clk), .rst(reset), .NPC(NPC), .PC(PC_out) );
