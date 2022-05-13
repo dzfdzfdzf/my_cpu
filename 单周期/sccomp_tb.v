@@ -15,7 +15,7 @@ module sccomp_tb();
   	integer counter = 0;
       integer i=0;
    initial begin
-      $readmemh( "Test_8_Instr.dat" , U_SCCOMP.U_IM.ROM); // load instructions into instruction memory
+      $readmemh( "Test_37_instr2.dat" , U_SCCOMP.U_IM.ROM); // load instructions into instruction memory
 //    $monitor("PC = 0x%8X, instr = 0x%8X", U_SCCOMP.PC, U_SCCOMP.instr); // used for debug
       foutput = $fopen("results.txt");  
       clk = 1;
@@ -39,7 +39,7 @@ module sccomp_tb();
         $stop;
       end
       else begin
-        if (U_SCCOMP.PC == 32'h00000048) begin
+        if (U_SCCOMP.PC == 32'h00000198) begin
           counter = counter + 1;
           $fdisplay(foutput, "pc:\t %h", U_SCCOMP.PC);
           $fdisplay(foutput, "instr:\t\t %h", U_SCCOMP.instr);
