@@ -19,8 +19,8 @@
 	##################
 	# Test Subset 2  #
 	ori x20, x0, 0x18F
-                lui x21, 0x3FB95
-                or x20,x20,x21                       
+    lui x21, 0x3FB95
+    or x20,x20,x21                       
 	lui x21, 0x98765                     
 	addi x21, x21, 0x345
 	addi x22, x20, -1024             
@@ -38,13 +38,13 @@
 	add x22, x21, x20
 	add x22, x22, x3
 	sub x22, x22, x20                  #x23=0x00001236
-	or  x23, x23, x22                 #x25=0x98767236
-	and x23, x23, x22               #x26=0x00000236
+	or  x23, x23, x22                  #x25=0x98767236
+	and x23, x23, x22                  #x26=0x00000236
 	slt x22,  x20  x21                 #x27=1
-	sltu x23, x20, x21               #x28=0
+	sltu x23, x20, x21                 #x28=0
 	
 	### Test for shift
-                addi x3, x3, 4   # pay attention to register shift
+    addi x3, x3, 4   # pay attention to register shift
 	sll x22, x20, x3
 	srl x22, x21, x3
 	sra x22, x21, x3
@@ -56,7 +56,7 @@
 	##################
 	# Test Subset 3  #
 	addi x3, x0, 0
-                addi x5,x0, 0xF5
+    addi x5,x0, 0xF5
 	
 	
 	### Test for store
@@ -70,7 +70,7 @@
 	sb x5, 8(x3)
 	
 	### Test for load
-                lw  x22, 0(x3)           #x5=0x98763DCC
+    lw  x22, 0(x3)           #x5=0x98763DCC
 	sw x22, 12(x3)
 	lh x23, 8(x3)             #x7=0xFFFF9876
 	sw x23, 16(x3)
@@ -91,13 +91,13 @@
 	bne x20, x21,  _lb1
 	addi x9, x9, 1
 
-              _lb1:
+   _lb1:
 	bge x20, x21, _lb2
 	addi x9, x9, 1
 
 	_lb2:
 	bgeu x20, x21, _lb3
-	addi x9, x9, 2
+	addi x9, x9, 2 
 
 	_lb3:
 	blt x20, x21, _lb4
@@ -108,7 +108,7 @@
 	addi x9, x9, 4
 
 	_lb5:
-                lw x25, 24(x3)
+    lw x25, 24(x3)
 	beq x21, x25, _lb6
 	addi x9, x9, 5
 

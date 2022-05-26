@@ -1,0 +1,12 @@
+sccomp_tb.v
+sccomp.v
+SCPU.v
+RF.v
+PC.v
+NPC.v
+im.v
+EXT.v
+dm.v
+ctrl.v
+ctrl_encode_def.v
+alu.v
