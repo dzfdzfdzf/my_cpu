@@ -4,7 +4,7 @@
 module ctrl(Op,
             Funct7,
             Funct3,
-            Zero,
+            //Zero,
             RegWrite,
             MemWrite,
             EXTOp,
@@ -12,13 +12,13 @@ module ctrl(Op,
             NPCOp,
             ALUSrc,
             DMType,
-            GPRSel,
+            // GPRSel,
             WDSel);
     
     input  [6:0] Op;       // opcode
     input  [6:0] Funct7;    // funct7
     input  [2:0] Funct3;    // funct3
-    input        Zero;
+    //input        Zero;
     
     output       RegWrite; // control signal for register write
     output       MemWrite; // control signal for memory write
@@ -27,7 +27,7 @@ module ctrl(Op,
     output [2:0] NPCOp;    // next pc operation
     output       ALUSrc;   // ALU source for A
     output [2:0] DMType;
-    output [1:0] GPRSel;   // general purpose register selection
+    // output [1:0] GPRSel;   // general purpose register selection
     output [1:0] WDSel;    // (register) write data selection
     
     // r format
@@ -117,7 +117,8 @@ module ctrl(Op,
     // NPC_BRANCH  3'b001
     // NPC_JUMP    3'b010
     // NPC_JALR	   3'b100
-    assign NPCOp[0] = sbtype & Zero;
+    //assign NPCOp[0] = sbtype & Zero;
+    assign NPCOp[0] = sbtype;
     assign NPCOp[1] = i_jal;
     assign NPCOp[2] = i_jalr;
     

@@ -10,3 +10,4 @@ dm.v
 ctrl.v
 ctrl_encode_def.v
 alu.v
+GRE_array.v
