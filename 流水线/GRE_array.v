@@ -1,7 +1,7 @@
-module GRE_array #(parameter WIDTH)(
+module GRE_array (
     input Clk,Rst,write_enable,flush,
-    input[0:WIDTH-1] in,
-    output reg [0:WIDTH-1] out
+    input[0:200-1] in,
+    output reg [0:200-1] out
 );
     always @(negedge Clk) 
     begin

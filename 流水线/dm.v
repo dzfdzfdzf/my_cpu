@@ -79,6 +79,7 @@ module dm(clk,
                             end
                         endcase 
             endcase
+            
         end
   always @(*) begin
       case(DMType) 

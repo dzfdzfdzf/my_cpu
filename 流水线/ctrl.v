@@ -13,7 +13,8 @@ module ctrl(Op,
             ALUSrc,
             DMType,
             // GPRSel,
-            WDSel);
+            WDSel,
+            MEMRead);
     
     input  [6:0] Op;       // opcode
     input  [6:0] Funct7;    // funct7
@@ -29,7 +30,7 @@ module ctrl(Op,
     output [2:0] DMType;
     // output [1:0] GPRSel;   // general purpose register selection
     output [1:0] WDSel;    // (register) write data selection
-    
+    output       MEMRead;
     // r format
     wire rtype = ~Op[6]&Op[5]&Op[4]&~Op[3]&~Op[2]&Op[1]&Op[0]; //0110011
     wire i_add = rtype& ~Funct7[6]&~Funct7[5]&~Funct7[4]&~Funct7[3]&~Funct7[2]&~Funct7[1]&~Funct7[0]&~Funct3[2]&~Funct3[1]&~Funct3[0]; // add 0000000 000
@@ -105,7 +106,7 @@ module ctrl(Op,
     assign EXTOp[0] = i_jal;
     
     
-    
+    assign MEMRead=itype_l;
     
     // WDSel_FromALU 2'b00
     // WDSel_FromMEM 2'b01
