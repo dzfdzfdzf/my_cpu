@@ -1,0 +1,2 @@
+iverilog -o main -c commandfile.txt
+vvp -n main -lxt2

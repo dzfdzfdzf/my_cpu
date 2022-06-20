@@ -117,7 +117,6 @@ module SCPU(
                         //32            2              1        32     32         5
 
    // instantiation of control unit
-   //TODO:应该还有个MEMwrite
 	ctrl U_ctrl(
 		.Op(Op), .Funct7(Funct7), .Funct3(Funct3), //.Zero(Zero), 
 		.RegWrite(RegWrite), .MemWrite(MemWrite),
@@ -155,7 +154,7 @@ module SCPU(
 //     if(NPCOp_temp!=3'b000)
 //     $display(PC_out,out1[63:32],out2[132:101],NPC);
 
-// end
+//  end
 always @ (*)
 begin
 	case(out4[71:70])
@@ -192,7 +191,6 @@ begin
         flush1<=0;
         flush3<=0;
         flush4<=0;
-        //$display(out2[132:101]," ",(out3[73:73]&&out3[4:0]&&(out3[4:0]==rs1||out3[4:0]==rs2)));
     end
     else
     begin

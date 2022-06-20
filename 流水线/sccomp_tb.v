@@ -29,7 +29,7 @@ module sccomp_tb();
    end
    
     always begin
-    #(50) clk = ~clk;
+    #(20) clk = ~clk;
 
 	  // always @(negedge clk) begin
     //   #10
