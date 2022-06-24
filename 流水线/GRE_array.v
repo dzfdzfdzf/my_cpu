@@ -5,7 +5,7 @@ module GRE_array (
 );
     always @(negedge Clk) 
     begin
-        if(write_enable)
+    if(write_enable)
         begin
             if(flush)
                 out=0;
@@ -13,8 +13,12 @@ module GRE_array (
                 out=in;
         end
     end
-    always @(posedge Rst)
+    always@(*)
     begin
-       out=0;       
+        if(Rst)
+         begin
+            out=0;
+        end
     end
+
 endmodule 

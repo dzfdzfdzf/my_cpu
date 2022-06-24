@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/SWORD_LED_CLK.v"
+verilog work "addbit.v"
+verilog work "LED_ctrl.v"
+verilog work "adderfour.v"
+verilog work "top.v"

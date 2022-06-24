@@ -34,7 +34,7 @@ module sccomp_tb();
 	  // always @(negedge clk) begin
     //   #10
     if (clk == 1'b1) begin
-      if ((counter == 2000) || (U_SCCOMP.U_SCPU.PC_out=== 32'hxxxxxxxx)) begin
+      if ((counter == 1000) || (U_SCCOMP.U_SCPU.PC_out=== 32'hxxxxxxxx)) begin
         $fclose(foutput);
         $stop;
       end

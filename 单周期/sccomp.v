@@ -22,8 +22,8 @@ module sccomp(clk, rstn, reg_sel, reg_data);
          .PC_out(PC),                   // output: PC
          .Addr_out(dm_addr),          // output: address from cpu to memory
          .Data_out(dm_din),        // output: data from cpu to memory
-         .reg_sel(reg_sel),         // input:  register selection
-         .reg_data(reg_data),         // output: register data
+         // .reg_sel(reg_sel),         // input:  register selection
+         // .reg_data(reg_data),         // output: register data
          .dmType(DMType)
          );
          

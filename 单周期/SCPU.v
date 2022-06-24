@@ -11,8 +11,8 @@ module SCPU(
     output [31:0] Addr_out,   // ALU output
     output [31:0] Data_out,// data to data memory
 
-    input  [4:0] reg_sel,    // register selection (for debug use)
-    output [31:0] reg_data,  // selected register data (for debug use)
+    // input  [4:0] reg_sel,    // register selection (for debug use)
+    // output [31:0] reg_data,  // selected register data (for debug use)
     output [2:0] dmType
 );
     wire        RegWrite;    // control signal to register write
