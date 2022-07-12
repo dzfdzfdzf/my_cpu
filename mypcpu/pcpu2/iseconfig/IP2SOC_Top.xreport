@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-06-24T09:06:08</DateModified>
+  <DateModified>2022-07-05T21:38:12</DateModified>
   <ModuleName>IP2SOC_Top</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/mypcpu/pcpu2/iseconfig/IP2SOC_Top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/mypcpu/pcpu2\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/cpu/my_cpu/mypcpu/pcpu2/iseconfig/IP2SOC_Top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/cpu/my_cpu/mypcpu/pcpu2\</ImplementationReportsDirectory>
   <DateInitialized>2022-06-23T19:38:27</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
