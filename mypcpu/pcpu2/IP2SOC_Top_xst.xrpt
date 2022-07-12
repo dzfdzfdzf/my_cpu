@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Fri Jun 24 09:06:31 2022">
+  <application stringID="Xst" timeStamp="Wed Jul 06 14:04:53 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="D:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.7\ISE_DS\PlanAhead\bin;D:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.7\ISE_DS\common\bin\nt64;D:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;D:\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;E:\JetBrains\PyCharm Community Edition 2021.2\bin;E:\MATLAB\R2020b\runtime\win64;E:\MATLAB\R2020b\bin;D:\mingw64\bin;D:\texlive\2021\bin\win32;E:\anaconda3;E:\anaconda3\Scripts;E:\anaconda3\Library\bin;E:\Python\Python39;D:\Downloads\cloc;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.1\;E:\Graphviz\bin;E:\Git\cmd;D:\nodejs\;E:\Python\Python39\Scripts\;E:\Python\Python39\;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\Microsoft VS Code\bin;D:\Bandizip\;D:\Program Files\JetBrains\IntelliJ IDEA 2021.1.3\bin;C:\Users\asus\AppData\Local\GitHubDesktop\bin;E:\modeltech64_10.4\win64;E:\modeltech64_2020.4\win64;E:\modeltech64_10.5\win64;D:\wget-1.21.3-win64;D:\iverilog\bin;D:\iverilog\gtkwave\bin;C:\Users\asus\AppData\Roaming\npm"/>
+          <item stringID="value" value="D:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.7\ISE_DS\PlanAhead\bin;D:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.7\ISE_DS\common\bin\nt64;D:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;D:\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;E:\JetBrains\PyCharm Community Edition 2021.2\bin;E:\MATLAB\R2020b\runtime\win64;E:\MATLAB\R2020b\bin;D:\mingw64\bin;D:\texlive\2021\bin\win32;E:\anaconda3;E:\anaconda3\Scripts;E:\anaconda3\Library\bin;E:\Python\Python39;D:\Downloads\cloc;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.1\;E:\Graphviz\bin;E:\Git\cmd;D:\nodejs\;D:\gnu-mcu-eclipse-riscv-none-gcc-7.2.0-4-20180606-1631-win64\bin;E:\Python\Python39\Scripts\;E:\Python\Python39\;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\Microsoft VS Code\bin;D:\Bandizip\;D:\Program Files\JetBrains\IntelliJ IDEA 2021.1.3\bin;C:\Users\asus\AppData\Local\GitHubDesktop\bin;E:\modeltech64_10.4\win64;E:\modeltech64_2020.4\win64;E:\modeltech64_10.5\win64;D:\wget-1.21.3-win64;D:\iverilog\bin;D:\iverilog\gtkwave\bin;C:\Users\asus\AppData\Roaming\npm"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -117,10 +117,10 @@
       <item dataType="int" stringID="XST_COMPARATORS" value="10">
         <item dataType="int" stringID="XST_32BIT_COMPARATOR_EQUAL" value="1"/>
       </item>
-      <item dataType="int" stringID="XST_MULTIPLEXERS" value="1032">
+      <item dataType="int" stringID="XST_MULTIPLEXERS" value="1031">
         <item dataType="int" stringID="XST_1BIT_2TO1_MULTIPLEXER" value="1007"/>
         <item dataType="int" stringID="XST_3BIT_2TO1_MULTIPLEXER" value="1"/>
-        <item dataType="int" stringID="XST_32BIT_2TO1_MULTIPLEXER" value="16"/>
+        <item dataType="int" stringID="XST_32BIT_2TO1_MULTIPLEXER" value="15"/>
         <item dataType="int" stringID="XST_32BIT_4TO1_MULTIPLEXER" value="1"/>
       </item>
       <item dataType="int" stringID="XST_XORS" value="2">
@@ -138,10 +138,10 @@
       <item dataType="int" stringID="XST_COMPARATORS" value="10">
         <item dataType="int" stringID="XST_32BIT_COMPARATOR_EQUAL" value="1"/>
       </item>
-      <item dataType="int" stringID="XST_MULTIPLEXERS" value="1157">
+      <item dataType="int" stringID="XST_MULTIPLEXERS" value="1156">
         <item dataType="int" stringID="XST_1BIT_2TO1_MULTIPLEXER" value="1072"/>
         <item dataType="int" stringID="XST_3BIT_2TO1_MULTIPLEXER" value="1"/>
-        <item dataType="int" stringID="XST_32BIT_2TO1_MULTIPLEXER" value="16"/>
+        <item dataType="int" stringID="XST_32BIT_2TO1_MULTIPLEXER" value="15"/>
         <item dataType="int" stringID="XST_32BIT_4TO1_MULTIPLEXER" value="1"/>
       </item>
       <item dataType="int" stringID="XST_XORS" value="2">
@@ -163,7 +163,7 @@
         <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="IP2SOC_Top.ngc"/>
       </section>
       <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="4225">
+        <item dataType="int" stringID="XST_BELS" value="4197">
           <item dataType="int" stringID="XST_AND2" value="8"/>
           <item dataType="int" stringID="XST_AND3" value="88"/>
           <item dataType="int" stringID="XST_AND4" value="72"/>
@@ -171,10 +171,10 @@
           <item dataType="int" stringID="XST_INV" value="88"/>
           <item dataType="int" stringID="XST_LUT1" value="154"/>
           <item dataType="int" stringID="XST_LUT2" value="74"/>
-          <item dataType="int" stringID="XST_LUT3" value="283"/>
-          <item dataType="int" stringID="XST_LUT4" value="298"/>
-          <item dataType="int" stringID="XST_LUT5" value="494"/>
-          <item dataType="int" stringID="XST_LUT6" value="1661"/>
+          <item dataType="int" stringID="XST_LUT3" value="285"/>
+          <item dataType="int" stringID="XST_LUT4" value="300"/>
+          <item dataType="int" stringID="XST_LUT5" value="434"/>
+          <item dataType="int" stringID="XST_LUT6" value="1689"/>
           <item dataType="int" stringID="XST_MUXCY" value="405"/>
           <item dataType="int" stringID="XST_MUXF7" value="128"/>
           <item dataType="int" stringID="XST_OR2" value="56"/>
@@ -207,12 +207,12 @@
     <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
       <item stringID="XST_SELECTED_DEVICE" value="7k160tffg676-2l"/>
       <item AVAILABLE="202800" dataType="int" label="Number of Slice Registers" stringID="XST_NUMBER_OF_SLICE_REGISTERS" value="1987"/>
-      <item AVAILABLE="101400" dataType="int" label="Number of Slice LUTs" stringID="XST_NUMBER_OF_SLICE_LUTS" value="3052"/>
-      <item AVAILABLE="101400" dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="3052"/>
-      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="4173"/>
-      <item AVAILABLE="4173" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="2186"/>
-      <item AVAILABLE="4173" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="1121"/>
-      <item AVAILABLE="4173" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="866"/>
+      <item AVAILABLE="101400" dataType="int" label="Number of Slice LUTs" stringID="XST_NUMBER_OF_SLICE_LUTS" value="3024"/>
+      <item AVAILABLE="101400" dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="3024"/>
+      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="4144"/>
+      <item AVAILABLE="4144" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="2157"/>
+      <item AVAILABLE="4144" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="1120"/>
+      <item AVAILABLE="4144" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="867"/>
       <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="61"/>
       <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="38"/>
       <item AVAILABLE="400" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="38"/>

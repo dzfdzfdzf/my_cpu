@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -182,7 +182,6 @@ Elaborating module <NPC>.
 Elaborating module <EXT>.
 
 Elaborating module <RF>.
-"D:\mypcpu\pcpu2\RF.v" Line 26. $display r[ 0] = 0x       0,
 
 Elaborating module <alu>.
 
@@ -244,18 +243,18 @@ Synthesizing Unit <SCPU>.
 WARNING:Xst:647 - Input <MIO_ready> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <INT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 32-bit adder for signal <MEM_WB_PC[31]_GND_6_o_add_73_OUT> created at line 291.
-    Found 32-bit adder for signal <EX_MEM_PC[31]_GND_6_o_add_100_OUT> created at line 389.
+    Found 32-bit adder for signal <EX_MEM_PC[31]_GND_6_o_add_100_OUT> created at line 388.
     Found 32-bit 4-to-1 multiplexer for signal <WD> created at line 266.
     Found 5-bit comparator equal for signal <EX_MEM_rd[4]_ID_EX_rs2[4]_equal_79_o> created at line 340
     Found 5-bit comparator equal for signal <MEM_WB_rd[4]_ID_EX_rs2[4]_equal_86_o> created at line 355
     Found 5-bit comparator equal for signal <EX_MEM_rd[4]_ID_EX_rs1[4]_equal_98_o> created at line 379
-    Found 5-bit comparator equal for signal <MEM_WB_rd[4]_ID_EX_rs1[4]_equal_105_o> created at line 397
-    Found 5-bit comparator equal for signal <ID_EX_rd[4]_IF_ID_rs1[4]_equal_118_o> created at line 431
-    Found 5-bit comparator equal for signal <ID_EX_rd[4]_IF_ID_rs2[4]_equal_119_o> created at line 431
+    Found 5-bit comparator equal for signal <MEM_WB_rd[4]_ID_EX_rs1[4]_equal_105_o> created at line 396
+    Found 5-bit comparator equal for signal <ID_EX_rd[4]_IF_ID_rs1[4]_equal_118_o> created at line 426
+    Found 5-bit comparator equal for signal <ID_EX_rd[4]_IF_ID_rs2[4]_equal_119_o> created at line 426
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred   6 Comparator(s).
-	inferred 151 Multiplexer(s).
+	inferred 150 Multiplexer(s).
 Unit <SCPU> synthesized.
 
 Synthesizing Unit <ctrl>.
@@ -273,7 +272,7 @@ Unit <PC> synthesized.
 Synthesizing Unit <NPC>.
     Related source file is "D:\mypcpu\pcpu2\NPC.v".
     Found 32-bit adder for signal <PCPLUS4> created at line 19.
-    Found 32-bit adder for signal <hPC[31]_IMM[31]_add_1_OUT> created at line 27.
+    Found 32-bit adder for signal <hPC[31]_IMM[31]_add_1_OUT> created at line 24.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 Unit <NPC> synthesized.
@@ -1310,8 +1309,8 @@ Synthesizing Unit <RF>.
     Found 1-bit register for signal <rf<0><2>>.
     Found 1-bit register for signal <rf<0><1>>.
     Found 1-bit register for signal <rf<0><0>>.
-    Found 32-bit 32-to-1 multiplexer for signal <A1[4]_rf[31][31]_wide_mux_36_OUT> created at line 30.
-    Found 32-bit 32-to-1 multiplexer for signal <A2[4]_rf[31][31]_wide_mux_39_OUT> created at line 31.
+    Found 32-bit 32-to-1 multiplexer for signal <A1[4]_rf[31][31]_wide_mux_36_OUT> created at line 23.
+    Found 32-bit 32-to-1 multiplexer for signal <A2[4]_rf[31][31]_wide_mux_39_OUT> created at line 24.
     Summary:
 	inferred 1024 D-type flip-flop(s).
 	inferred   4 Multiplexer(s).
@@ -1418,10 +1417,10 @@ Macro Statistics
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 2
  5-bit comparator equal                                : 6
-# Multiplexers                                         : 1032
+# Multiplexers                                         : 1031
  1-bit 2-to-1 multiplexer                              : 1007
  3-bit 2-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 16
+ 32-bit 2-to-1 multiplexer                             : 15
  32-bit 32-to-1 multiplexer                            : 2
  32-bit 4-to-1 multiplexer                             : 1
  33-bit 2-to-1 multiplexer                             : 4
@@ -1537,11 +1536,11 @@ Macro Statistics
  32-bit comparator equal                               : 1
  32-bit comparator greater                             : 2
  5-bit comparator equal                                : 6
-# Multiplexers                                         : 1157
+# Multiplexers                                         : 1156
  1-bit 2-to-1 multiplexer                              : 1072
  1-bit 32-to-1 multiplexer                             : 64
  3-bit 2-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 16
+ 32-bit 2-to-1 multiplexer                             : 15
  32-bit 4-to-1 multiplexer                             : 1
  33-bit 2-to-1 multiplexer                             : 2
  33-bit 4-to-1 multiplexer                             : 1
@@ -2037,7 +2036,7 @@ Top Level Output File Name         : IP2SOC_Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4225
+# BELS                             : 4197
 #      AND2                        : 8
 #      AND3                        : 88
 #      AND4                        : 72
@@ -2045,10 +2044,10 @@ Primitive and Black Box Usage:
 #      INV                         : 88
 #      LUT1                        : 154
 #      LUT2                        : 74
-#      LUT3                        : 283
-#      LUT4                        : 298
-#      LUT5                        : 494
-#      LUT6                        : 1661
+#      LUT3                        : 285
+#      LUT4                        : 300
+#      LUT5                        : 434
+#      LUT6                        : 1689
 #      MUXCY                       : 405
 #      MUXF7                       : 128
 #      OR2                         : 56
@@ -2085,14 +2084,14 @@ Selected Device : 7k160tffg676-2l
 
 Slice Logic Utilization: 
  Number of Slice Registers:            1987  out of  202800     0%  
- Number of Slice LUTs:                 3052  out of  101400     3%  
-    Number used as Logic:              3052  out of  101400     3%  
+ Number of Slice LUTs:                 3024  out of  101400     2%  
+    Number used as Logic:              3024  out of  101400     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4173
-   Number with an unused Flip Flop:    2186  out of   4173    52%  
-   Number with an unused LUT:          1121  out of   4173    26%  
-   Number of fully used LUT-FF pairs:   866  out of   4173    20%  
+ Number of LUT Flip Flop pairs used:   4144
+   Number with an unused Flip Flop:    2157  out of   4144    52%  
+   Number with an unused LUT:          1120  out of   4144    27%  
+   Number of fully used LUT-FF pairs:   867  out of   4144    20%  
    Number of unique control sets:        61
 
 IO Utilization: 
@@ -2198,7 +2197,7 @@ Delay:               4.920ns (Levels of Logic = 12)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U8_Clk_CPU'
   Clock period: 5.560ns (frequency: 179.869MHz)
-  Total number of paths / destination ports: 64125 / 2536
+  Total number of paths / destination ports: 64061 / 2536
 -------------------------------------------------------------------------
 Delay:               2.780ns (Levels of Logic = 4)
   Source:            U1/IF_ID/out_178_1 (FF)
@@ -2293,7 +2292,7 @@ Delay:               1.420ns (Levels of Logic = 2)
     ----------------------------------------  ------------
      FDCE_1:C->Q           3   0.240   0.507  counter_set_1 (counter_set<1>)
      end scope: 'U7:counter_set<1>'
-     LUT3:I0->O           32   0.043   0.469  U10/_n0095<1>11 (U10/_n0095<1>1)
+     LUT3:I0->O           32   0.043   0.469  U10/_n0093<1>11 (U10/_n0093<1>1)
      FDCE:CE                   0.161          U10/counter0_Lock_0
     ----------------------------------------
     Total                      1.420ns (0.444ns logic, 0.976ns route)
@@ -2481,7 +2480,7 @@ Clock to Setup on destination clock U1/U_alu/ALUOp[4]_GND_16_o_Mux_18_o
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-U8_Clk_CPU     |         |         |    9.508|         |
+U8_Clk_CPU     |         |         |   10.041|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock U8/clkdiv_6
@@ -2490,7 +2489,7 @@ Clock to Setup on destination clock U8/clkdiv_6
 Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------+---------+---------+---------+---------+
 U8/clkdiv_6         |    2.221|         |         |         |
-U8_Clk_CPU_INV_258_o|    2.079|         |         |         |
+U8_Clk_CPU_INV_258_o|    2.133|         |         |         |
 clk_100mhz          |    1.636|         |         |         |
 --------------------+---------+---------+---------+---------+
 
@@ -2542,12 +2541,12 @@ clk_100mhz          |    4.920|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 16.82 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.70 secs
  
 --> 
 
-Total memory usage is 4656716 kilobytes
+Total memory usage is 4656780 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  524 (   0 filtered)

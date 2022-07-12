@@ -358,7 +358,7 @@ begin
         begin
         ID_EX_RD2Fin<=MEM_WB_aluoout;
         end
-        else if(EX_MEM_WDSel==2'b10)
+        else if(MEM_WB_WDSel==2'b10)
         begin
         ID_EX_RD2Fin<=MEM_WB_PC+4;
         end
@@ -379,8 +379,7 @@ begin
     else if(EX_MEM_RegWrite&&EX_MEM_rd&&(EX_MEM_rd==ID_EX_rs1))
     begin
         if(EX_MEM_WDSel==2'b00)
-        begin
-        //  $display("%h",ID_EX_PC);   
+        begin  
         ID_EX_RD1Fin<=EX_MEM_aluout;
         end
         else if(EX_MEM_WDSel==2'b10)
@@ -400,7 +399,7 @@ begin
          begin
         ID_EX_RD1Fin<=MEM_WB_aluoout;
         end
-        else if(EX_MEM_WDSel==2'b10)
+        else if(MEM_WB_WDSel==2'b10)
         begin
         ID_EX_RD1Fin<=MEM_WB_PC+4;
         end
@@ -424,10 +423,6 @@ begin
         flush1<=0;
        
     end
-    // else if((ID_EX_RegWrite&&ID_EX_rd&&(ID_EX_rd==IF_ID_rs1||ID_EX_rd==IF_ID_rs2))
-    // ||(EX_MEM_RegWrite&&EX_MEM_rd&&(EX_MEM_rd==IF_ID_rs1||EX_MEM_rd==IF_ID_rs2))
-    // ||(ID_EX_MemRead&&ID_EX_rd&&(ID_EX_rd==IF_ID_rs1||ID_EX_rd==IF_ID_rs2)))
-
     else if((ID_EX_MemRead&&ID_EX_rd&&(ID_EX_rd==IF_ID_rs1||ID_EX_rd==IF_ID_rs2)))
     begin
         flush2<=1;

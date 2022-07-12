@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Fri Jun 24 09:07:42 2022">
+  <application stringID="par" timeStamp="Wed Jul 06 14:06:02 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="D:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.7\ISE_DS\PlanAhead\bin;D:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.7\ISE_DS\common\bin\nt64;D:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;D:\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;E:\JetBrains\PyCharm Community Edition 2021.2\bin;E:\MATLAB\R2020b\runtime\win64;E:\MATLAB\R2020b\bin;D:\mingw64\bin;D:\texlive\2021\bin\win32;E:\anaconda3;E:\anaconda3\Scripts;E:\anaconda3\Library\bin;E:\Python\Python39;D:\Downloads\cloc;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.1\;E:\Graphviz\bin;E:\Git\cmd;D:\nodejs\;E:\Python\Python39\Scripts\;E:\Python\Python39\;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\Microsoft VS Code\bin;D:\Bandizip\;D:\Program Files\JetBrains\IntelliJ IDEA 2021.1.3\bin;C:\Users\asus\AppData\Local\GitHubDesktop\bin;E:\modeltech64_10.4\win64;E:\modeltech64_2020.4\win64;E:\modeltech64_10.5\win64;D:\wget-1.21.3-win64;D:\iverilog\bin;D:\iverilog\gtkwave\bin;C:\Users\asus\AppData\Roaming\npm"/>
+          <item stringID="value" value="D:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.7\ISE_DS\PlanAhead\bin;D:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.7\ISE_DS\common\bin\nt64;D:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;D:\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;E:\JetBrains\PyCharm Community Edition 2021.2\bin;E:\MATLAB\R2020b\runtime\win64;E:\MATLAB\R2020b\bin;D:\mingw64\bin;D:\texlive\2021\bin\win32;E:\anaconda3;E:\anaconda3\Scripts;E:\anaconda3\Library\bin;E:\Python\Python39;D:\Downloads\cloc;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.1\;E:\Graphviz\bin;E:\Git\cmd;D:\nodejs\;D:\gnu-mcu-eclipse-riscv-none-gcc-7.2.0-4-20180606-1631-win64\bin;E:\Python\Python39\Scripts\;E:\Python\Python39\;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\Microsoft VS Code\bin;D:\Bandizip\;D:\Program Files\JetBrains\IntelliJ IDEA 2021.1.3\bin;C:\Users\asus\AppData\Local\GitHubDesktop\bin;E:\modeltech64_10.4\win64;E:\modeltech64_2020.4\win64;E:\modeltech64_10.5\win64;D:\wget-1.21.3-win64;D:\iverilog\bin;D:\iverilog\gtkwave\bin;C:\Users\asus\AppData\Roaming\npm"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -63,12 +63,12 @@
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="18 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="18 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="19 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="19 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="19 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="19 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="20 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="20 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
@@ -87,17 +87,17 @@
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGCTRL_X0Y2"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="412.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.285000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.683000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="404.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.237000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.628000"/>
           </row>
           <row stringID="row" value="2">
             <item label="Clock Net" stringID="CLOCK_NET" value="U8_Clk_CPU_INV_258_o_BUFG"/>
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGCTRL_X0Y29"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="36.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.232000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="35.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.233000"/>
             <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.626000"/>
           </row>
           <row stringID="row" value="3">
@@ -105,9 +105,9 @@
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGCTRL_X0Y0"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="100.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.456000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.679000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="94.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.442000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.665000"/>
           </row>
           <row stringID="row" value="4">
             <item label="Clock Net" stringID="CLOCK_NET" value="U8/clkdiv_6_BUFG"/>
@@ -124,8 +124,8 @@
             <item label="Resource" stringID="RESOURCE" value="BUFGCTRL_X0Y1"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="12.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.011000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.626000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.012000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.625000"/>
           </row>
           <row stringID="row" value="6">
             <item label="Clock Net" stringID="CLOCK_NET" value="U1/U_alu/ALUOp[4]_GND_16_o_Mux_18_o_BUFG"/>
@@ -133,8 +133,8 @@
             <item label="Resource" stringID="RESOURCE" value="BUFGCTRL_X0Y30"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="16.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.012000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.570000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.009000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.572000"/>
           </row>
         </table>
       </section>
@@ -4532,14 +4532,14 @@
     </task>
   </application>
 
-  <application stringID="Par" timeStamp="Fri Jun 24 09:07:42 2022">
+  <application stringID="Par" timeStamp="Wed Jul 06 14:06:02 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="D:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.7\ISE_DS\PlanAhead\bin;D:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.7\ISE_DS\common\bin\nt64;D:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;D:\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;E:\JetBrains\PyCharm Community Edition 2021.2\bin;E:\MATLAB\R2020b\runtime\win64;E:\MATLAB\R2020b\bin;D:\mingw64\bin;D:\texlive\2021\bin\win32;E:\anaconda3;E:\anaconda3\Scripts;E:\anaconda3\Library\bin;E:\Python\Python39;D:\Downloads\cloc;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.1\;E:\Graphviz\bin;E:\Git\cmd;D:\nodejs\;E:\Python\Python39\Scripts\;E:\Python\Python39\;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\Microsoft VS Code\bin;D:\Bandizip\;D:\Program Files\JetBrains\IntelliJ IDEA 2021.1.3\bin;C:\Users\asus\AppData\Local\GitHubDesktop\bin;E:\modeltech64_10.4\win64;E:\modeltech64_2020.4\win64;E:\modeltech64_10.5\win64;D:\wget-1.21.3-win64;D:\iverilog\bin;D:\iverilog\gtkwave\bin;C:\Users\asus\AppData\Roaming\npm"/>
+          <item stringID="value" value="D:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.7\ISE_DS\PlanAhead\bin;D:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.7\ISE_DS\common\bin\nt64;D:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;D:\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;E:\JetBrains\PyCharm Community Edition 2021.2\bin;E:\MATLAB\R2020b\runtime\win64;E:\MATLAB\R2020b\bin;D:\mingw64\bin;D:\texlive\2021\bin\win32;E:\anaconda3;E:\anaconda3\Scripts;E:\anaconda3\Library\bin;E:\Python\Python39;D:\Downloads\cloc;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.1\;E:\Graphviz\bin;E:\Git\cmd;D:\nodejs\;D:\gnu-mcu-eclipse-riscv-none-gcc-7.2.0-4-20180606-1631-win64\bin;E:\Python\Python39\Scripts\;E:\Python\Python39\;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\Microsoft VS Code\bin;D:\Bandizip\;D:\Program Files\JetBrains\IntelliJ IDEA 2021.1.3\bin;C:\Users\asus\AppData\Local\GitHubDesktop\bin;E:\modeltech64_10.4\win64;E:\modeltech64_2020.4\win64;E:\modeltech64_10.5\win64;D:\wget-1.21.3-win64;D:\iverilog\bin;D:\iverilog\gtkwave\bin;C:\Users\asus\AppData\Roaming\npm"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -4588,10 +4588,10 @@
           <item dataType="int" stringID="PAR_NUM_SLICE_LATCHTHRU" value="0"/>
           <item dataType="int" stringID="PAR_NUM_SLICE_LATCHLOGIC" value="0"/>
         </item>
-        <item AVAILABLE="101400" dataType="int" label="Number of Slice LUTS" stringID="PAR_SLICE_LUTS" value="2818">
+        <item AVAILABLE="101400" dataType="int" label="Number of Slice LUTS" stringID="PAR_SLICE_LUTS" value="2794">
           <item dataType="int" stringID="PAR_NUM_LOGIC_O5ONLY" value="150"/>
-          <item dataType="int" stringID="PAR_NUM_LOGIC_O6ONLY" value="2379"/>
-          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ANDO6" value="283"/>
+          <item dataType="int" stringID="PAR_NUM_LOGIC_O6ONLY" value="2343"/>
+          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ANDO6" value="287"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O5ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O6ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O5ANDO6" value="0"/>
@@ -4605,20 +4605,20 @@
           <item dataType="int" stringID="PAR_NUM_SRL_O6ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_SRL_O5ANDO6" value="0"/>
           <item dataType="int" stringID="PAR_NUM_LUT_RT_EXO6" value="6"/>
-          <item dataType="int" stringID="PAR_NUM_LUT_RT_EXO5" value="0"/>
+          <item dataType="int" stringID="PAR_NUM_LUT_RT_EXO5" value="8"/>
           <item dataType="int" stringID="PAR_NUM_LUT_RT_O5ANDO6" value="0"/>
-          <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_FLOP" value="0"/>
+          <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_FLOP" value="8"/>
           <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_CARRY4" value="6"/>
           <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_OTHERS" value="0"/>
         </item>
-        <item AVAILABLE="25350" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="1184">
-          <item AVAILABLE="16600" dataType="int" stringID="PAR_NUM_SLICEL" value="1184"/>
+        <item AVAILABLE="25350" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="1050">
+          <item AVAILABLE="16600" dataType="int" stringID="PAR_NUM_SLICEL" value="1050"/>
           <item AVAILABLE="8750" dataType="int" stringID="PAR_NUM_SLICEM" value="0"/>
         </item>
-        <item dataType="int" stringID="PAR_OCCUPIED_LUT_AND_FF" value="3708">
-          <item dataType="int" stringID="PAR_OCCUPIED_LUT_ONLY" value="1860"/>
-          <item dataType="int" stringID="PAR_OCCUPIED_FF_ONLY" value="890"/>
-          <item dataType="int" stringID="PAR_OCCUPIED_FF_AND_LUT" value="958"/>
+        <item dataType="int" stringID="PAR_OCCUPIED_LUT_AND_FF" value="3565">
+          <item dataType="int" stringID="PAR_OCCUPIED_LUT_ONLY" value="1729"/>
+          <item dataType="int" stringID="PAR_OCCUPIED_FF_ONLY" value="771"/>
+          <item dataType="int" stringID="PAR_OCCUPIED_FF_AND_LUT" value="1065"/>
         </item>
       </section>
       <section stringID="PAR_IOB_REPORTING">

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: IP2SOC_Top.prj
 
@@ -157,15 +157,15 @@ Elaborating module <IP2SOC_Top>.
 
 Elaborating module <SAnti_jitter>.
 WARNING:HDLCompiler:1499 - "D:\myscpu2\scpu\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
-WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 76: Assignment to pulse_out ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 57: Assignment to pulse_out ignored, since the identifier is never used
 
 Elaborating module <clk_div>.
 
 Elaborating module <SEnter_2_32>.
 WARNING:HDLCompiler:1499 - "D:\myscpu2\scpu\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
-WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 96: Assignment to Ai ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 97: Assignment to Bi ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 98: Assignment to blink ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 77: Assignment to Ai ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 78: Assignment to Bi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 79: Assignment to blink ignored, since the identifier is never used
 
 Elaborating module <SSeg7_Dev>.
 WARNING:HDLCompiler:1499 - "D:\myscpu2\scpu\SSeg7_Dev_IO.v" Line 21: Empty module <SSeg7_Dev> remains a black box.
@@ -185,7 +185,7 @@ Elaborating module <EXT>.
 Elaborating module <RF>.
 
 Elaborating module <alu>.
-WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 124: Assignment to CPU_MIO ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 105: Assignment to CPU_MIO ignored, since the identifier is never used
 
 Elaborating module <ROM_B2>.
 WARNING:HDLCompiler:1499 - "D:\myscpu2\scpu\ipcore_dir\ROM_B2.v" Line 39: Empty module <ROM_B2> remains a black box.
@@ -195,7 +195,7 @@ WARNING:HDLCompiler:1499 - "D:\myscpu2\scpu\ipcore_dir\RAM_B2.v" Line 39: Empty 
 
 Elaborating module <MIO_BUS>.
 WARNING:HDLCompiler:1499 - "D:\myscpu2\scpu\MIO_BUS_IO.v" Line 21: Empty module <MIO_BUS> remains a black box.
-WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 149: Assignment to data_ram_we ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 130: Assignment to data_ram_we ignored, since the identifier is never used
 
 Elaborating module <Counter_x>.
 WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\Counter_3_IO.v" Line 43: Assignment to M2 ignored, since the identifier is never used
@@ -203,11 +203,11 @@ WARNING:HDLCompiler:634 - "D:\myscpu2\scpu\Counter_3_IO.v" Line 36: Net <counter
 
 Elaborating module <SPIO>.
 WARNING:HDLCompiler:1499 - "D:\myscpu2\scpu\SPIO_IO.v" Line 21: Empty module <SPIO> remains a black box.
-WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 184: Assignment to GPIOf0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 165: Assignment to GPIOf0 ignored, since the identifier is never used
 
 Elaborating module <Multi_8CH32>.
 WARNING:HDLCompiler:1499 - "D:\myscpu2\scpu\Multi_8CH32_IO.v" Line 21: Empty module <Multi_8CH32> remains a black box.
-WARNING:HDLCompiler:634 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 46: Net <MIO_ready> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 27: Net <MIO_ready> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -215,13 +215,13 @@ WARNING:HDLCompiler:634 - "D:\myscpu2\scpu\IP2SOC_Top.v" Line 46: Net <MIO_ready
 
 Synthesizing Unit <IP2SOC_Top>.
     Related source file is "D:\myscpu2\scpu\IP2SOC_Top.v".
-INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 67: Output port <pulse_out> of the instance <U9> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 89: Output port <Ai> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 89: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 89: Output port <blink> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 114: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 139: Output port <data_ram_we> of the instance <U4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 176: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 48: Output port <pulse_out> of the instance <U9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 70: Output port <Ai> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 70: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 70: Output port <blink> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 95: Output port <CPU_MIO> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 120: Output port <data_ram_we> of the instance <U4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\myscpu2\scpu\IP2SOC_Top.v" line 157: Output port <GPIOf0> of the instance <U7> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <MIO_ready> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
@@ -2111,12 +2111,12 @@ clk_100mhz     |    4.920|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 17.20 secs
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.06 secs
  
 --> 
 
-Total memory usage is 4642156 kilobytes
+Total memory usage is 4642096 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  135 (   0 filtered)

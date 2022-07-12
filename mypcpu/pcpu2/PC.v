@@ -13,12 +13,8 @@ module PC(clk,
     always @(posedge clk, posedge rst)
         if (rst)
             PC <= 32'h0000_0000;
-            //      PC <= 32'h0000_3000;
         else if(PC_write)
-            PC <= NPC;
-//    always @(*) begin
-//         $display("%h,%h",NPC,PC);
-//    end    
+            PC <= NPC;   
     
 endmodule
     

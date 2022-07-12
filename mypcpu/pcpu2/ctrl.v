@@ -1,10 +1,6 @@
-// `include "ctrl_encode_def.v"
-
-//123
 module ctrl(Op,
             Funct7,
             Funct3,
-            //Zero,
             RegWrite,
             MemWrite,
             EXTOp,
@@ -12,7 +8,6 @@ module ctrl(Op,
             NPCOp,
             ALUSrc,
             DMWType,
-            // GPRSel,
             DMRType,
             WDSel,
             MEMRead);
@@ -20,8 +15,6 @@ module ctrl(Op,
     input  [6:0] Op;       // opcode
     input  [6:0] Funct7;    // funct7
     input  [2:0] Funct3;    // funct3
-    //input        Zero;
-    
     output       RegWrite; // control signal for register write
     output       MemWrite; // control signal for memory write
     output [5:0] EXTOp;    // control signal to signed extension
@@ -30,7 +23,6 @@ module ctrl(Op,
     output       ALUSrc;   // ALU source for A
     output [3:0] DMWType;
     output[2:0]DMRType;
-    // output [1:0] GPRSel;   // general purpose register selection
     output [1:0] WDSel;    // (register) write data selection
     output       MEMRead;
     // r format

@@ -8,7 +8,7 @@ module NPC(PC,
            aluout); // next pc module
     
     input  [31:0] PC;        // pc
-    input  [31:0] hPC;       // beq涔嬪墠鐨刾c
+    input  [31:0] hPC;       // 控制冒险对应的PC(即EX阶段的PC)
     input  [2:0]  NPCOp;     // next pc operation
     input  [31:0] IMM;       // immediate
     input [31:0] aluout;
@@ -20,19 +20,13 @@ module NPC(PC,
     
     always @(*) begin
         case (NPCOp)
-            `NPC_PLUS4:  begin NPC = PCPLUS4;
-            //$display("%h,%h",PC,NPC);
-            end
-            `NPC_BRANCH:begin
-            NPC = hPC+IMM;
-            //  $display("%h,%h,%h",PC,hPC,NPC);
-            end
-            `NPC_JUMP:  begin NPC = hPC+IMM; //$display("%h,%h",PC,NPC);
-            end
+            `NPC_PLUS4: NPC = PCPLUS4;
+            `NPC_BRANCH:NPC = hPC+IMM;
+            `NPC_JUMP:  NPC = hPC+IMM; 
             `NPC_JALR:	 NPC = aluout;
             default:     NPC = PCPLUS4;
         endcase
-        //$display("%h,%h,%h",PC,hPC,NPC);
-    end // end always
+
+    end 
     
 endmodule

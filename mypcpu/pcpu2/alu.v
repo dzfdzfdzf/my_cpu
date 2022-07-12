@@ -37,7 +37,7 @@ module alu(A,
             `ALUOp_srl:C   = A>>B;
             `ALUOp_sra:C   = A>>>B;
         endcase
-    end // end always
+    end 
     
     assign Zero = (C == 32'b0);
     
